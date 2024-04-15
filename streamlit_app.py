@@ -6,7 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.title(" Diabetes_Prediction ")
 
-@st.cache_resource
 def load_util():
     model = joblib.load(r"diabModel.pkl")
     return model
