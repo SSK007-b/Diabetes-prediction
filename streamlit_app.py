@@ -9,7 +9,7 @@ import sys
 st.title(" Diabetes_Prediction ")
 
 def load_util():
-    model = joblib.load(open('D:\ML\streamlit\PKL_Files', "rb"))
+    model = joblib.load(open('D:\ML\streamlit\PKL_Files\diabModel.pkl', "rb"))
     return model
 
 g = st.selectbox(" Enter your gender " , ("Male" , "Female"))
