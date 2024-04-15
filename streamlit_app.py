@@ -6,15 +6,10 @@ from sklearn.ensemble import RandomForestClassifier
 import path
 import sys
 
-dir = path.Path(__file__).abspath()
-sys.append.path(dir.parent.parent)
-
-path = "D:\ML\streamlit\PKL_Files\diabModel.pkl"
-
 st.title(" Diabetes_Prediction ")
 
 def load_util():
-    model = joblib.load(path)
+    model = joblib.load(open('D:\ML\streamlit\PKL_Files', "rb"))
     return model
 
 g = st.selectbox(" Enter your gender " , ("Male" , "Female"))
