@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.title(" Diabetes_Prediction ")
 
 def load_util():
-    model = joblib.load(r"diabModel.pkl")
+    model = joblib.load(r"PKL_Files\diabModel.pkl")
     return model
 
 g = st.selectbox(" Enter your gender " , ("Male" , "Female"))
