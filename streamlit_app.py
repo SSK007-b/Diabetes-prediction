@@ -3,13 +3,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-import path
-import sys
+from pathlib import Path
+
+pkl_path = Path(__file__).parents[1] / 'PKL_Files\diabModel.pkl'
 
 st.title(" Diabetes_Prediction ")
 
 def load_util():
-    model = joblib.load(r'D:/ML/streamlit/PKL_Files/diabModel.pkl')
+    model = joblib.load(pkl_path)
     return model
 
 g = st.selectbox(" Enter your gender " , ("Male" , "Female"))
