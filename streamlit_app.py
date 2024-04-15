@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from pathlib import Path
 
-pkl_path = Path(__file__).parents[1] / 'PKL_Files/diabModel.pkl'
+pkl_path = Path(__file__).parent / 'PKL_Files/diabModel.pkl'
 
 st.title(" Diabetes_Prediction ")
 
